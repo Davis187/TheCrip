@@ -1,0 +1,134 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+header .banner {
+    background-image: url(./img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 120px;
+    text-align: center;
+}
+
+
+.navbar {
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 0.2em 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #47bbff;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+.filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.filter-btn:focus {
+    background-color: #47bbff;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: rgb(51,51,51);
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(33,33,33,1) 100%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    width: 500px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #47bbff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #4781ff;
+}

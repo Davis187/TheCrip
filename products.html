@@ -1,0 +1,91 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte - The Crip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       
+    <nav class="navbar">
+        <ul class="nav-links">
+			<li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produkte</a></li>
+        </ul>
+    </nav>
+	 <div class="banner">
+            <h1></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter">
+            <button class="filter-btn" onclick="filterProducts('all')">Alle</button>
+            <button class="filter-btn" onclick="filterProducts('Discord')">Discord</button>
+            <button class="filter-btn" onclick="filterProducts('Games')">Games</button>
+            <button class="filter-btn" onclick="filterProducts('Streaming-Service')">Streaming-Service</button>
+        </section>
+
+        <section class="products">
+            <div class="product-card Discord">
+                <img src="https://media.discordapp.net/attachments/1283847681198002209/1283847682217082991/UpdatedNitroLogo_1MB_2560x1440-c77a4693df3d7434672f6424b4550bf0.jpg?ex=66f1aad4&is=66f05954&hm=740a1e8e51efba1c7623b3b0081920bc418b0c18c4bbc3f313dd184dcd8aaaec&=&format=webp&width=1527&height=859" alt="N1tro">
+                <h2>Discord N1tro</h2>
+                <h3>Detailed description:</h3>
+                <p> 🚀 This method is NOT FORBIDDEN by Discord rules!🔥<br>
+                    ⚠️ This method works for any account and any region <br>
+                    🚀 Activation process takes just 5 minutes!🔥<br>
+                    🌍 Activation available in Russia!<br>
+                    
+                    </p>
+                <p href="https://discord.gg/thecrip" class="button-link">Preis: 6.50€</p>
+            </div>
+            <div class="product-card Discord">
+                <img src="https://media.discordapp.net/attachments/1283847681198002209/1283847682217082991/UpdatedNitroLogo_1MB_2560x1440-c77a4693df3d7434672f6424b4550bf0.jpg?ex=66f1aad4&is=66f05954&hm=740a1e8e51efba1c7623b3b0081920bc418b0c18c4bbc3f313dd184dcd8aaaec&=&format=webp&width=1527&height=859" alt="SERVER B0OZTS">
+                <h2>SERVER B0OZTS</h2>
+                <h3>Instructions:</h3>
+                <p>
+                    ➖ After payment, send an invite link to your Discord server.<br>
+                    ❗ Do not kick or ban the accounts providing the boosts.
+                    </p>
+                <a href="https://discord.gg/thecrip" class="button-link">Preis: 19,99€</a>
+            </div>
+            <div class="product-card Games">
+                <img src="produkt2.jpg" alt="Produkt 2">
+                <h3>Produkt 2</h3>
+                <p>Beschreibung des Produkts 2.</p>
+                <p>Preis: 29,99€</p>
+                <a href="https://discord.gg/thecrip" class="button-link">Buy</a>
+            </div>
+            <div class="product-card Streaming-Service">
+                <img src="produkt3.jpg" alt="Produkt 3">
+                <h3>Produkt 3</h3>
+                <p>Beschreibung des Produkts 3.</p>
+                <p>Preis: 39,99€</p>
+                <a href="https://discord.gg/thecrip" class="button-link">Buy</a>
+            </div>
+
+            <!-- Weitere Produkte können hier hinzugefügt werden -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Crip. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.product-card');
+            products.forEach((product) => {
+                if (category === 'all' || product.classList.contains(category)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
