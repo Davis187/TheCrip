@@ -132,8 +132,103 @@ footer {
 .button-link:hover {
     background-color: #4781ff;
 }
+.card {
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    color: #fff;
+    margin-left: 32%;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+}
+
+.card p:last-child {
+    margin-bottom: 10;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+}
+
+/* Stil für das Modal */
+.modal {
+    display: none; /* Versteckt das Modal standardmäßig */
+    position: fixed; /* Bleibt an einem festen Punkt auf der Seite */
+    z-index: 1; /* Zeigt das Modal über anderen Inhalten */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Ermöglicht Scrollen, falls der Inhalt groß ist */
+    background-color: rgba(0, 0, 0, 0.808); /* Halbtransparent schwarzer Hintergrund */
+}
+
+/* Stil für den Modal-Inhalt */
+.modal-content {
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    text-align: center;
+}
+
+/* Stil für den Schließen-Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #0067a3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
 
 .Discord{
-    
+background-color: rgba(255, 0, 0, 0);
+padding-top: 8vh;
 
 }
+
